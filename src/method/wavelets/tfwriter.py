@@ -5,10 +5,8 @@ project_path = os.path.dirname(os.path.realpath("../../../"))
 import sys
 import csv
 sys.path.append(project_path)
-from src.metaphor_engine import MetaPHOR
-from src.ml.utils.utils import extract_structural_entropy
-from src.ml.utils.utils import serialize_wavelet_example
-
+from metaphor.metaphor_engine import MetaPHOR
+from src.method.utils import extract_structural_entropy, serialize_wavelet_example
 import numpy as np
 import pywt
 

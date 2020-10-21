@@ -52,7 +52,6 @@ if __name__ == "__main__":
         os.environ["CUDA_VISIBLE_DEVICES"] = parameters["gpu"]
 
     model = MultiresolutionCNN(parameters)
-    # tf.keras.utils.plot_model(model, 'shallow_cnn_mlw_classification.png', show_shapes=True)
 
     loss_func = tf.keras.losses.SparseCategoricalCrossentropy()
     accuracy = tf.keras.metrics.SparseCategoricalAccuracy()
